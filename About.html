@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Taste of the Rainbow Nation</title>
+    <!-- Link to external CSS style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>About Taste of the Rainbow Nation</h1>
+        <div class="rainbow-line"></div>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Catering.html">Catering Services</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <main class="container">
+        <section id="introduction">
+            <p><strong>Taste of the Rainbow Nation</strong> is more than just a restaurant; it's a culinary celebration of South Africa’s rich diversity, blending traditional flavors with modern Western influences. Located in the heart of the community, our restaurant was born from the idea of bringing people together through food, much like the unifying spirit of the ‘Rainbow Nation’ itself.</p>
+
+            <p>Our menu is designed to reflect the variety of cultural traditions that make South African cuisine so vibrant. From the sweet and spicy Cape Malay curries to the hearty flavors of a traditional braai, each dish offers a taste of the many cultures that shape our country’s culinary landscape.</p>
+
+            <p>We use only the freshest locally sourced ingredients, honoring South Africa’s bountiful resources while supporting local farmers and producers. Every dish is crafted with love and respect for both the ingredients and the cultural heritage behind it.</p>
+        </section>
+
+        <section id="mission">
+            <h2>Mission Statement</h2>
+            <p>At <strong>Taste of the Rainbow Nation</strong>, our mission is to celebrate and honor South Africa’s rich cultural diversity through the art of food. We are committed to providing an exceptional dining experience that fuses traditional South African recipes with modern Western influences, offering our guests a unique and flavorful journey.</p>
+
+            <p>We believe in the power of food to unite people, just as the "Rainbow Nation" represents the unity of diverse cultures. Our dishes are made from locally sourced ingredients, reflecting both our respect for South African heritage and our commitment to sustainability.</p>
+
+            <p>Whether you join us for a casual meal, a family gathering, or a large-scale event, <strong>Taste of the Rainbow Nation</strong> is dedicated to offering a warm, welcoming atmosphere and memorable meals that showcase the best of our culinary traditions.</p>
+        </section>
+
+        <section id="name-meaning">
+            <h2>Why We Chose the Name</h2>
+            <p>The name <strong>Taste of the Rainbow Nation</strong> was chosen to reflect the rich cultural diversity and vibrant spirit of South Africa. In post-apartheid South Africa, the term “Rainbow Nation” was coined by Archbishop Desmond Tutu to symbolize unity and the coming together of different ethnicities, cultures, and traditions under one nation. This powerful concept inspired the creation of a restaurant that embodies the same ideals.</p>
+
+            <p>Our restaurant aims to celebrate South Africa’s diverse culinary heritage, combining traditional dishes from various cultures with contemporary Western influences. Just as South Africa’s people unite across differences, <strong>Taste of the Rainbow Nation</strong> seeks to bring together a variety of flavors and cooking styles, offering a culinary experience that is both unique and inclusive.</p>
+
+            <p>By choosing <strong>Taste of the Rainbow Nation</strong>, we pay tribute to the country’s past while looking forward to its future, with food as the common thread that unites us all.</p>
+
+            <img src="images/Tase logo.png" alt="Taste of the Rainbow Nation Logo" class="logo"> <!-- Added alt attribute for accessibility -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Taste of the Rainbow Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        });
+    </script>
+</body>
+</html>

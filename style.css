@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for readability */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Rainbow Line */
+.rainbow-line {
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    margin: 20px auto;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #111; /* Dark background for header/footer */
+    color: #FFD700; /* Gold text for contrast */
+    text-align: center;
+    padding: 1.5em 0; /* Consistent padding */
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 150px; /* Reduces logo size */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Hero Image Styling */
+.hero {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Images Styling */
+.menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-images img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* Ensures uniform size */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-images img:hover {
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+}
+
+/* General Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px;
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* No underline */
+    margin: 0 15px; /* Margin between links */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 800px; /* Limit max width for main content */
+    margin: auto; /* Center main content */
+    background: white; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading Styles */
+h3 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    background: #f9f9f9; /* Light background for list items */
+    margin: 10px 0; /* Margin between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners */
+    border-left: 5px solid #FFD700; /* Gold left border */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0; /* Consistent padding */
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for footer */
+    position: relative;
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+.container {
+    max-width: 1200px; /* Set a maximum width for large screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+.gallery-container {
+    display: flex; /* Use flexbox for gallery layout */
+    justify-content: space-around; /* Space images evenly */
+    flex-wrap: wrap; /* Allow wrapping of images on smaller screens */
+}
+
+.gallery-image {
+    max-width: 30%; /* Control the maximum width of images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space between images */
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjusts spacing between images */
+}
+
+.gallery-image {
+    width: 200px; /* Set a specific width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Lightbox Styles */
+#lightbox {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}

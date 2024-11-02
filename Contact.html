@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Taste of the Rainbow Nation</title>
+    <meta name="description" content="Contact Taste of the Rainbow Nation for bookings, inquiries, and follow us on social media.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact</h1>
+        <div class="rainbow-line"></div>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Catering.html">Catering Services</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>For Bookings:</strong> +27 12 345 6789</p>
+                <p><strong>Email:</strong> catering@tasteoftherainbownation.com</p>
+                <p><strong>General Contact:</strong> info@tasteoftherainbownation.com</p>
+                <p><strong>Phone:</strong> 031 655 7830</p>
+            </div>
+
+            <div class="social-media">
+                <p><strong>Follow Us:</strong></p>
+                <ul>
+                    <li><a href="https://twitter.com/TTRN_eats" target="_blank">@TTRN_eats on Twitter</a></li>
+                    <li><a href="https://instagram.com/TTRN_eats" target="_blank">@TTRN_eats on Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Contact Form -->
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <h3>Contact Form</h3>
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="success-message" style="display:none; color: rgb(205, 205, 26);">
+                Your message has been successfully sent!
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Receive Our Newsletter</h2>
+        <p>Stay updated with our latest dishes, events, and special offers!</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOcR_BrwhjJwrULKmgcNIiNOzY07gz1oACTlfjHN1NyIvx2w/viewform?embedded=true"
+                width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Taste of the Rainbow Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic JavaScript validation and form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Basic validation
+            if (!name) {
+                alert('Name is required.');
+                return;
+            }
+            if (!email) {
+                alert('Email is required.');
+                return;
+            }
+
+            // Simulate form submission
+            // Here you would typically send the data to a server
+            // For demonstration, we simply show a success message
+            document.getElementById('success-message').style.display = 'block';
+
+            // Reset the form fields
+            document.getElementById('contact-form').reset();
+        }
+
+        // Clears text fields on focus
+        const form = document.getElementById('contact-form');
+        form.addEventListener('focusin', function(event) {
+            if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+                event.target.value = ''; // Clears text field when focused
+            }
+        });
+    </script>
+
+</body>
+</html>
+

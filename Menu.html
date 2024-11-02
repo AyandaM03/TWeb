@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Taste of the Rainbow Nation</title>
+    <meta name="description" content="Explore our diverse menu featuring traditional South African dishes and modern culinary delights.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Menu</h1>
+        <div class="rainbow-line"></div>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Catering.html">Catering Services</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section id="search-section" class="container">
+            <h2>Search Our Menu</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter dish or keyword" aria-label="Search our menu">
+                <button onclick="searchMenu()">Search</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>Menu Items</h2>
+                <div class="menu-item" data-name="Bobotie with Yellow Rice">
+                    <h3>Bobotie with Yellow Rice</h3>
+                    <p>A spiced minced meat dish baked with an egg-based topping, served with yellow rice and sambals.</p>
+                </div>
+                <div class="menu-item" data-name="Braai Platter">
+                    <h3>Braai Platter</h3>
+                    <p>Grilled boerewors, lamb chops, and chicken skewers served with pap, chakalaka, and coleslaw.</p>
+                </div>
+                <div class="menu-item" data-name="Cape Malay Curry">
+                    <h3>Cape Malay Curry</h3>
+                    <p>A mild, fragrant curry with chicken, potatoes, and Cape Malay spices, served with rice.</p>
+                </div>
+                <div class="menu-item" data-name="Bunny Chow">
+                    <h3>Bunny Chow</h3>
+                    <p>A Durban favorite: hollowed-out bread filled with spicy chicken, lamb, or bean curry.</p>
+                </div>
+                <div class="menu-item" data-name="Potjiekos">
+                    <h3>Potjiekos</h3>
+                    <p>Slow-cooked stew made with tender beef or lamb and a variety of vegetables.</p>
+                </div>
+                <div class="menu-item" data-name="Shisa Nyama">
+                    <h3>Shisa Nyama</h3>
+                    <p>A traditional township braai with a selection of grilled meats, pap, and tomato relish.</p>
+                </div>
+                <div class="menu-item" data-name="Sosaties">
+                    <h3>Sosaties</h3>
+                    <p>Skewered, marinated meat grilled and served with a fruity apricot sauce.</p>
+                </div>
+                <div class="menu-item" data-name="Umngqusho">
+                    <h3>Umngqusho</h3>
+                    <p>A comforting Xhosa dish made with dried corn, beans, onions, and butter.</p>
+                </div>
+                <div class="menu-item" data-name="Oxtail Stew">
+                    <h3>Oxtail Stew</h3>
+                    <p>A rich, slow-cooked stew made with tender oxtail, vegetables, and red wine, served with mashed potatoes.</p>
+                </div>
+                <div class="menu-item" data-name="Smoked Snoek">
+                    <h3>Smoked Snoek</h3>
+                    <p>A Cape delicacy of smoked snoek fish glazed with apricot jam, served with steamed potatoes.</p>
+                </div>
+                <div class="menu-item" data-name="Boerewors Roll">
+                    <h3>Boerewors Roll</h3>
+                    <p>A South African-style hot dog with boerewors sausage in a roll, topped with tomato and onion relish.</p>
+                </div>
+                <div class="menu-item" data-name="Malva Pudding">
+                    <h3>Malva Pudding</h3>
+                    <p>A rich, syrupy sponge pudding served warm with custard or vanilla ice cream.</p>
+                </div>
+                <div class="menu-item" data-name="Milk Tart (Melktert)">
+                    <h3>Milk Tart (Melktert)</h3>
+                    <p>A creamy custard tart with a hint of cinnamon, in a pastry shell.</p>
+                </div>
+                <div class="menu-item" data-name="Koeksisters">
+                    <h3>Koeksisters</h3>
+                    <p>Deep-fried plaited dough soaked in sugary syrup, crispy on the outside and sticky on the inside.</p>
+                </div>
+                <div class="menu-item" data-name="Peppermint Crisp Tart">
+                    <h3>Peppermint Crisp Tart</h3>
+                    <p>Layers of whipped cream, caramel, and mint chocolate on a coconut biscuit base.</p>
+                </div>
+                <div class="menu-item" data-name="Amarula Crème Brûlée">
+                    <h3>Amarula Crème Brûlée</h3>
+                    <p>A South African twist on crème brûlée, flavored with Amarula liqueur.</p>
+                </div>
+                <div class="menu-item" data-name="Jan Ellis Pudding">
+                    <h3>Jan Ellis Pudding</h3>
+                    <p>A light steamed pudding, served with syrup and cream.</p>
+                </div>
+                <div class="menu-item" data-name="Lamingtons">
+                    <h3>Lamingtons</h3>
+                    <p>Sponge cake squares dipped in chocolate and rolled in coconut.</p>
+                </div>
+                <div class="menu-item" data-name="Pumpkin Fritters (Pampoenkoekies)">
+                    <h3>Pumpkin Fritters (Pampoenkoekies)</h3>
+                    <p>Fluffy pumpkin fritters sprinkled with cinnamon sugar.</p>
+                </div>
+                <div class="menu-item" data-name="Rusks (Beskuit)">
+                    <h3>Rusks (Beskuit)</h3>
+                    <p>Traditional twice-baked biscuits, perfect for dunking in tea or coffee.</p>
+                </div>
+                <div class="menu-item" data-name="Honeybush and Rooibos Cheesecake">
+                    <h3>Honeybush and Rooibos Cheesecake</h3>
+                    <p>Cheesecake infused with South African tea flavors, topped with a berry compote.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="rainbow-line"></div>
+            <div class="gallery-container">
+                <img src="images/Braai Platter.jpeg" alt="Braai Platter" class="gallery-image"> 
+                <img src="images/Malva Pudding.webp" alt="Malva Pudding" class="gallery-image">
+                <img src="images/bobotie.jpg" alt="Bobotie" class="gallery-image">
+                <img src="images/pot rice.jpg" alt="Pot Rice" class="gallery-image">
+                <img src="images/7 coulors.jpg" alt="7 Colours" class="gallery-image">
+                <img src="images/roly poly bake.jfif" alt="Roly Poly" class="gallery-image">
+                <img src="images/bunny chow.jfif" alt="Bunny Chow" class="gallery-image">
+                <img src="images/dessert.jfif" alt="Interior of Taste of the Rainbow Nation" class="gallery-image">
+                <img src="images/koksiester.jfif" alt="Koeksister" class="gallery-image">
+                <img src="images/curry rice.jfif" alt="Curry Rice" class="gallery-image">
+            </div>
+            <div class="rainbow-line"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taste of the Rainbow Nation. All rights reserved.</p>
+    </footer>
+
+    <script src="search.js"></script>  <!-- Link to search functionality -->
+    <script>
+        function searchMenu() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const menuItems = document.querySelectorAll(".menu-item");
+
+            menuItems.forEach(item => {
+                const itemName = item.getAttribute("data-name").toLowerCase();
+                item.style.display = itemName.includes(input) ? "block" : "none";
+            });
+        }
+    </script>
+
+<script>
+    // Lightbox Functionality
+    document.querySelectorAll(".gallery-container img").forEach(image => {
+        image.addEventListener("click", function() {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = this.src;
+        });
+    });
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+<!-- Lightbox Container -->
+<div id="lightbox" style="display: none;">
+    <span id="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // Lightbox Functionality
+    document.querySelectorAll(".gallery-container img").forEach(image => {
+        image.addEventListener("click", function() {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = this.src;
+        });
+    });
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

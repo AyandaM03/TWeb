@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>Home - Taste of the Rainbow Nation</title>
+    <meta name="description" content="Welcome to Taste of the Rainbow Nation, a restaurant celebrating South Africa's diverse culinary heritage with a modern twist.">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS style -->
+</head>
+
+<body>
+    <header>
+        <img src="images/Tase logo.png" alt="Taste of the Rainbow Nation Logo" class="logo"> 
+        <h1>A Culinary Journey through South Africa’s Rainbow Nation</h1>
+        <div class="rainbow-line"></div>
+    </header>
+    
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Catering.html">Catering Services</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <main class="container">
+        <img src="images/td.gif" alt="Taste of the Rainbow Nation Interior" class="hero"> 
+        <p>
+            Welcome to Taste of the Rainbow Nation, where we blend the rich culinary traditions of South Africa with popular Western dishes. Enjoy a sophisticated yet welcoming dining experience in our elegantly decorated restaurant. We are committed to delivering a memorable culinary journey with every visit.
+        </p>
+        
+        <h2>Menu Highlights</h2>
+        <div class="menu-images">
+            <img src="images/Braai Platter.jpeg" alt="Braai Platter" class="menu-img"> 
+            <img src="images/Malva Pudding.webp" alt="Malva Pudding" class="menu-img"> 
+            <img src="images/bobotie.jpg" alt="Bobotie" class="menu-img"> 
+        </div>
+
+        <section id="intro">
+            <p>Taste of the Rainbow Nation is a restaurant dedicated to providing an exceptional dining experience that blends traditional South African flavors with modern Western influences.</p>
+            <p>To learn more about our offerings, visit our <a href="Menu.html">Menu</a> page.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Taste of the Rainbow Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        });
+    </script>
+
+    <!-- Lightbox Container -->
+<div id="lightbox" style="display: none;">
+    <span id="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+</body>
+</html>
+
+

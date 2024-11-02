@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services - Taste of the Rainbow Nation</title>
+    <meta name="description" content="Discover our customizable catering services for events of all sizes, celebrating South African cuisine.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catering Services</h1>
+        <div class="rainbow-line"></div>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Catering.html">Catering Services</a>
+        <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section id="catering">
+            <div class="container">
+                <p>At <strong>Taste of the Rainbow Nation</strong>, we offer customizable catering services for events of all sizes. Whether you're planning an intimate gathering or a large celebration, our team will work with you to create a menu that delights your guests and reflects the rich flavors of South African and Western cuisine.</p>
+
+                <h2>Our Event Packages</h2>
+                <p>Choose from a range of event packages tailored to suit your specific needs:</p>
+                <ul>
+                    <li><strong>Gold Package:</strong> Includes a selection of our most popular dishes, perfect for medium to large events.</li>
+                    <li><strong>Platinum Package:</strong> A luxurious package featuring premium menu items and personalized service.</li>
+                    <li><strong>Rainbow Package:</strong> A customizable package that allows you to mix and match dishes from our menu to create the perfect spread.</li>
+                </ul>
+            </div>
+
+            <div class="gallery-container">
+                <h2>Gallery</h2>
+                <img src="images/server 4.jpg" alt="Catering Service 1" class="gallery-image">
+                <img src="images/server 5.jfif" alt="Catering Service 2" class="gallery-image">
+                <img src="images/serve 3.jfif" alt="Catering Service 3" class="gallery-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Taste of the Rainbow Nation. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Container -->
+<div id="lightbox" style="display: none;">
+    <span id="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // Lightbox Functionality
+    document.querySelectorAll(".gallery-container img").forEach(image => {
+        image.addEventListener("click", function() {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = this.src;
+        });
+    });
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+</body>
+</html>
+
